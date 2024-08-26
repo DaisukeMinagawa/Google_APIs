@@ -16,8 +16,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <curl/curl.h>
-#include <json-c/json.h>
+#include "curl/curl.h"
+#include "json-c/json.h"
 #include <time.h>
 #include <locale.h>
 #include <ctype.h>
