@@ -30,11 +30,14 @@ int main(void) {
 
     printf("Google Calendar イベントインポートツール\n\n");
 
+    // OAuth 2.0フローを実行してアクセストークンを取得
     char *access_token = NULL;
     if (perform_oauth_flow(&access_token) != 0) {
         fprintf(stderr, "エラー: OAuth 2.0フローに失敗しました\n");
         return 1;
     }
+
+    printf("アクセストークンの取得に成功しました: %s\n", access_token);
 
     char* calendar_id = get_config_value("calendar_id", CONFIG_FILE);
     if (calendar_id == NULL) {

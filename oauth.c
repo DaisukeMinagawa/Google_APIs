@@ -141,12 +141,12 @@ int perform_oauth_flow(char **access_token) {
 }
 
 // int main() {
-//     char *access_token = NULL;
-//     if (perform_oauth_flow(&access_token) == 0) {
-//         printf("アクセストークンの取得に成功しました: %s\n", access_token);
-//         free(access_token);
-//     } else {
-//         printf("OAuth認証に失敗しました。\n");
-//     }
-//     return 0;
+    // char *access_token = NULL;
+    // if (perform_oauth_flow(&access_token) == 0) {
+    //     printf("アクセストークンの取得に成功しました: %s\n", access_token);
+    //     free(access_token);
+    // } else {
+    //     printf("OAuth認証に失敗しました。\n");
+    // }
+    // return 0;
 // }
